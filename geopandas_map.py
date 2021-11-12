@@ -1,6 +1,7 @@
 import streamlit as st
 import altair as alt
 import geopandas as gpd
+import json
 
 regions = alt.topo_feature("https://raw.githubusercontent.com/deldersveld/topojson/master/countries/italy/italy-regions.json", 'ITA_adm1')
 map = alt.Chart(regions).mark_geoshape(
